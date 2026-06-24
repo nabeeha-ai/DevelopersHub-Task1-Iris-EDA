@@ -1,34 +1,32 @@
-# Task 1: Exploring and Visualizing the Iris Dataset
+# Task 1 - Iris Dataset EDA
 
-**Internship:** DevelopersHub Corporation — Data Science & Analytics Internship Program
+DevelopersHub Corporation - Data Science & Analytics Internship
 
-## 📌 Task Objective
-Understand how to read, summarize, and visualize a dataset using Python. This task uses the
-classic **Iris dataset** to practice data loading, inspection, and exploratory visualization.
+## What this task is about
 
-## 🛠️ Approach
-1. Loaded the Iris dataset using `seaborn.load_dataset()` (150 samples, 3 species).
-2. Inspected the dataset's structure using `.shape`, `.columns`, `.head()`, `.info()`, and `.describe()`.
-3. Verified data quality — checked for missing values and duplicate rows.
-4. Created visualizations using **matplotlib** and **seaborn**:
-   - Scatter plot (petal length vs petal width, colored by species)
-   - Histograms (distribution of all 4 numeric features)
-   - Box plots (spread and outlier detection per species)
-   - Correlation heatmap (bonus)
+This task was about getting comfortable with the basics of reading and visualizing a dataset in Python. I used the Iris dataset for this since it's small, clean, and commonly used for practicing EDA.
 
-## 📊 Results & Insights
-- The dataset is clean with no missing values or duplicates, and perfectly balanced (50 samples/species).
-- **Petal length and petal width** are the most discriminative features — they almost perfectly separate
-  the three species on their own.
-- **Sepal measurements overlap more** across species, making them less reliable for classification.
-- *Setosa* is consistently the most distinct/separable species across every plot.
-- A few mild outliers were detected in `sepal_width`, mainly for *virginica*.
+## What I did
 
-## 🧰 Tools & Libraries
-`pandas` · `matplotlib` · `seaborn`
+I loaded the dataset using seaborn, then checked its shape, columns, and basic stats with pandas (`.shape`, `.columns`, `.head()`, `.describe()`). After confirming there were no missing values or duplicates, I moved on to visualizing it:
 
-## 📁 Files
-- `Task1_Iris_EDA.ipynb` — Full Jupyter notebook with code, visualizations, and written insights.
+- A scatter plot of petal length vs petal width, colored by species
+- Histograms for all four numeric features to see how they're distributed
+- Box plots to check the spread and spot any outliers per species
+- A correlation heatmap to see how the features relate to each other
 
-## 👤 Author
-Nabeeha — BS Artificial Intelligence, Superior University Faisalabad
+## What I found
+
+Petal length and petal width turned out to be the most useful features - just these two pretty much separate the three species on their own. Sepal measurements overlap a lot more between species, so they're less helpful for telling them apart. Setosa stood out as the most distinct species in basically every plot, while versicolor and virginica overlapped a bit, especially in petal length and sepal width. There were a couple of mild outliers in sepal width, mostly in virginica, but nothing major.
+
+## Tools used
+
+pandas, matplotlib, seaborn
+
+## Files in this repo
+
+- `Task1_Iris_EDA.ipynb` - the notebook with all the code, plots, and explanations
+
+## Author
+
+Nabeeha, BS Artificial Intelligence, Superior University Faisalabad
