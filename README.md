@@ -26,6 +26,7 @@ pandas, matplotlib, seaborn
 ## Files in this repo
 
 - `Task1_Iris_EDA.ipynb` - the notebook with all the code, plots, and explanations
+- `iris.csv` - the dataset used in this task
 
 ## Author
 
